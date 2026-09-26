@@ -35,6 +35,15 @@
       <label>难点批注<input id="noteInput" placeholder="如：第2小节小锣晚半拍"></label>
     </section>
 
+    <section class="archive">
+      <div class="archive-head">
+        <h2>写法档案</h2>
+        <p>每件乐器以正字发声，地方写法只改显示；同一个词全档只归一件乐器。</p>
+      </div>
+      <div id="archivePanel" class="archive-panel"></div>
+      <p id="archiveMessage" class="archive-message" aria-live="polite"></p>
+    </section>
+
     <section class="stage">
       <aside class="segments">
         <h2>已存方案</h2>
@@ -51,6 +60,8 @@
       </aside>
     </section>
   </main>
+  <script src="./archive.js"></script>
+  <script src="./storage.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

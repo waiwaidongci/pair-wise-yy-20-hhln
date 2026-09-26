@@ -115,6 +115,117 @@ select {
   align-items: start;
 }
 
+.archive {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.archive-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.archive-head h2 {
+  margin-bottom: 0;
+}
+
+.archive-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.archive-panel {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.archive-card {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+}
+
+.archive-card h3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 15px;
+}
+
+.archive-card h3 small {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.alias-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 26px;
+}
+
+.alias-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff7e8;
+  padding: 2px 8px;
+  font-size: 13px;
+}
+
+.alias-chip button {
+  min-height: auto;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  padding: 0 4px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.alias-empty {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.alias-add {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+}
+
+.alias-add button {
+  min-height: 36px;
+}
+
+.archive-message {
+  min-height: 20px;
+  margin: 8px 0 0;
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.saved-preview {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
 .segments,
 .score,
 .notes {
@@ -222,6 +333,10 @@ select {
   .controls {
     grid-template-columns: 1fr;
   }
+
+  .archive-panel {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -229,5 +344,9 @@ select {
   .transport {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .archive-panel {
+    grid-template-columns: 1fr;
   }
 }
