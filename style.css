@@ -160,6 +160,12 @@ select {
   font-size: 13px;
 }
 
+.label-cell small {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .cell {
   width: 100%;
   border-top: 0;
@@ -215,6 +221,95 @@ select {
   padding: 8px 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.label-cell small {
+  display: block;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.notation-row {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.notation-row header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.notation-row header span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 30px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.chip em {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.chip.active {
+  border-color: var(--accent);
+  background: #fff1d1;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.chip-remove {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.chip-remove:hover {
+  color: var(--accent);
+}
+
+.alias-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+}
+
+.alias-form input {
+  padding: 6px 8px;
+}
+
+.alias-form button {
+  min-height: 32px;
+  padding: 0 10px;
+}
+
+.notation-msg {
+  margin: 4px 0 0;
+  color: var(--accent);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 @media (max-width: 1160px) {
